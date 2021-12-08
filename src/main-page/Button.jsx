@@ -1,15 +1,15 @@
-import { Button } from "bootstrap";
+// import { Button } from "bootstrap";
 import PropTypes from "prop-types";
 
 function Button({children,onClick,color}){
     return (
         <button
-            style={{ backgroundColor: "color" }}
+            style={{ backgroundColor: color }}
             onClick={onClick}
             className="btn"
         >
             {children}
-        </button>;
+        </button>
     );
 }
 

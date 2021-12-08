@@ -1,4 +1,6 @@
 import Header from "./main-page/Header";
+import Tasks from "./main-page/Tasks";
+
 const initialTasks = [
   {
     id: 1,
@@ -25,9 +27,10 @@ const initialTasks = [
 function App() {
   return (
     <div className ="container">
-      <Header/> 
+      <Header />
+      <Tasks tasks={initialTasks}/>
     </div>
   );
-};
+}
 
 export default App;
