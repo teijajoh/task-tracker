@@ -1,6 +1,4 @@
-// import { Button } from "bootstrap";
 import PropTypes from "prop-types";
-
 function Button({children,onClick,color}){
     return (
         <button
