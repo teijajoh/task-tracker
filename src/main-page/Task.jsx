@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import { FaTimes } from "react-icons/fa";
 
+
 function Task({ task, onToggle, onDelete }) {
   const containerClasses = "task " + (task.reminder ? "reminder" : "");
 
@@ -19,7 +20,7 @@ function Task({ task, onToggle, onDelete }) {
 }
 
 Task.propTypes = {
-  task: PropTypes.shape({
+    task: PropTypes.shape({
     id: PropTypes.number.isRequired,
     text: PropTypes.string.isRequired,
     day: PropTypes.string.isRequired,
